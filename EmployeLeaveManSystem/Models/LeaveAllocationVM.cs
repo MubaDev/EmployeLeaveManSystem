@@ -19,7 +19,7 @@ namespace EmployeLeaveManSystem.Models
         public String EmployeeId { get; set; }
 
       
-        public DetailsLeaveTypeVM leaveType { get; set; }
+        public LeaveTypeVM leaveType { get; set; }
         public int LeaveTypeId { get; set; }
 
         public IEnumerable<SelectListItem> Employees { get; set; }
