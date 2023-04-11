@@ -18,12 +18,16 @@ namespace EmployeLeaveManSystem.Models
     
         public EmployeeVM Employee { get; set; }
         public String EmployeeId { get; set; }
-
       
         public LeaveTypeVM leaveType { get; set; }
         public int LeaveTypeId { get; set; }
 
         public IEnumerable<SelectListItem> Employees { get; set; }
         public IEnumerable<SelectListItem> LeaveTypes { get; set; }
+    }
+    public class CreateLeaveAllocationVM
+    {
+        public int NumberUpdated { get; set; }
+        public List<LeaveTypeVM> LeaveTypes { get; set; }
     }
 }

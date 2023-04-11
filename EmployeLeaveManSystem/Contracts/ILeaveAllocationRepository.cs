@@ -8,6 +8,6 @@ namespace EmployeLeaveManSystem.Contracts
 {
     public interface ILeaveAllocationRepository : IRepositoryBase<LeaveAllocation>
     {
-
+        bool checkAllocation(int leaveTypeid, string employeeid);
     }
 }
